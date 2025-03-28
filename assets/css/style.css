@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+/* khôi phục lại cỡ chữ mặc định theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* common */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  color: aliceblue;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 24px;
+  background: #000;
+}
+
+.clmain {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+/* header */
+.header {
+  background: #dddd98;
+}
+
+.header.hd001 {
+  position: sticky;
+  top: -28px;
+}
+
+.hd001 .body {
+  display: flex;
+  align-items: center;
+  padding: 36px 0 8px;
+}
+.nav ul {
+  display: flex;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.nav a {
+  position: relative;
+  color: #5f5f5f;
+  font-size: 1.6rem;
+  padding: 8px 21px;
+}
+.nav li.clh a,
+.nav a:hover {
+  color: black;
+  /* font-weight: 700; */
+  text-shadow: -1px 0 0 currentColor;
+}
+.nav li.clh a::after {
+  position: absolute;
+  display: block;
+  left: 21px;
+  bottom: 6px;
+  content: "";
+  width: 12px;
+  height: 2px;
+  border-radius: 1px;
+  background: #000;
+}
+
+.header .action {
+  margin-left: 50px;
+}
